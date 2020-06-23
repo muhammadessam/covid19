@@ -27,7 +27,15 @@
                 <a href="{{route('admin.observer.index')}}" class="nav-link {{request()->routeIs('admin.observer.*') ? 'active' :''}}">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
-                        Observer
+                        Observers
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="{{route('admin.patient.index')}}" class="nav-link {{request()->routeIs('admin.patient.*') ? 'active' :''}}">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                        Patients
                     </p>
                 </a>
             </li>

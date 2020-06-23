@@ -15,7 +15,7 @@ class PatientController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.patients.index');
     }
 
     /**
@@ -25,7 +25,7 @@ class PatientController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.patients.create');
     }
 
     /**
@@ -36,7 +36,20 @@ class PatientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'identification' => 'required',
+            'name' => 'required',
+            'phone' => 'required',
+            'status' => 'required',
+            'test_date' => 'required',
+            'isolation_end' => 'required',
+            'band' => 'required',
+            'village_id' => 'required',
+            'observer_id' => 'required',
+        ]);
+        Patient::create($request->all());
+        toast('successful', 'success');
+        return redirect()->route('admin.patient.index');
     }
 
     /**
@@ -58,7 +71,7 @@ class PatientController extends Controller
      */
     public function edit(Patient $patient)
     {
-        //
+        return view('admin.patients.edit', compact('patient'));
     }
 
     /**
@@ -70,7 +83,20 @@ class PatientController extends Controller
      */
     public function update(Request $request, Patient $patient)
     {
-        //
+        $request->validate([
+            'identification' => 'required',
+            'name' => 'required',
+            'phone' => 'required',
+            'status' => 'required',
+            'test_date' => 'required',
+            'isolation_end' => 'required',
+            'band' => 'required',
+            'village_id' => 'required',
+            'observer_id' => 'required',
+        ]);
+        $patient->update($request->all());
+        toast('successful', 'success');
+        return redirect()->route('admin.patient.index');
     }
 
     /**
@@ -81,6 +107,8 @@ class PatientController extends Controller
      */
     public function destroy(Patient $patient)
     {
-        //
+        $patient->delete();
+        toast('successful', 'success');
+        return redirect()->back();
     }
 }
