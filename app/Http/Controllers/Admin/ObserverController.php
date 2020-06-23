@@ -15,7 +15,7 @@ class ObserverController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.observers.index');
     }
 
     /**
@@ -36,7 +36,12 @@ class ObserverController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+        ]);
+        Observer::create($request->all());
+        toast('successful', 'success');
+        return redirect()->back();
     }
 
     /**
@@ -58,7 +63,7 @@ class ObserverController extends Controller
      */
     public function edit(Observer $observer)
     {
-        //
+        return view('admin.observers.edit', compact('observer'));
     }
 
     /**
@@ -70,7 +75,12 @@ class ObserverController extends Controller
      */
     public function update(Request $request, Observer $observer)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+        ]);
+        $observer->update($request->all());
+        toast('successful', 'success');
+        return redirect()->route('admin.observer.index');
     }
 
     /**
@@ -81,6 +91,8 @@ class ObserverController extends Controller
      */
     public function destroy(Observer $observer)
     {
-        //
+        $observer->delete();
+        toast('successful', 'success');
+        return redirect()->back();
     }
 }

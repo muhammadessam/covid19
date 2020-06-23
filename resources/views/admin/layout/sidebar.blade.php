@@ -23,7 +23,14 @@
                     </p>
                 </a>
             </li>
-
+            <li class="nav-item ">
+                <a href="{{route('admin.observer.index')}}" class="nav-link {{request()->routeIs('admin.observer.*') ? 'active' :''}}">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                        Observer
+                    </p>
+                </a>
+            </li>
         </ul>
     </nav>
     <!-- /.sidebar-menu -->

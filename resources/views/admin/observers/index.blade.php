@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Villages</h1>
+                    <h1 class="m-0 text-dark">Observers</h1>
                 </div>
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -17,12 +17,12 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <form class="form-inline justify-content-between" action="{{route('admin.village.store')}}" method="post">
+                    <form class="form-inline justify-content-between" action="{{route('admin.observer.store')}}" method="post">
                         @csrf
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" id="name" placeholder="Enter a new village ...">
+                                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" id="name" placeholder="Enter a new observer ...">
                                 </div>
                             </div>
                         </div>
@@ -43,13 +43,13 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach(\App\Village::all() as $index=>$item)
+                        @foreach(\App\Observer::all() as $index=>$item)
                             <tr>
                                 <td>{{$index+1}}</td>
                                 <td>{{$item['name']}}</td>
                                 <td class="d-flex">
-                                    <a class="btn btn-primary mr-2" href="{{route('admin.village.edit', $item)}}"><i class="fa fa-edit"></i></a>
-                                    <form action="{{route('admin.village.destroy', $item)}}" method="post" onsubmit="return confirm('Are you sure ?')">
+                                    <a class="btn btn-primary mr-2" href="{{route('admin.observer.edit', $item)}}"><i class="fa fa-edit"></i></a>
+                                    <form action="{{route('admin.observer.destroy', $item)}}" method="post" onsubmit="return confirm('Are you sure ?')">
                                         @csrf
                                         @method('DELETE')
                                         <button class="btn btn-danger" type="submit"><i class="fa fa-trash"></i></button>

@@ -11,39 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af2c5f6-fff3-49bc-a46c-9c18261cca58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_23_001638_create_admins_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/head.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/nav.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/villages/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/villages/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/datatable.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/error.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/observers/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/observers/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ObserverController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ObserverController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/villages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/villages/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +145,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/observers" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -180,6 +154,7 @@
       <recent name="C:\laragon\www\covid19\app\Http\Controllers\Admin\Auth" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\covid19\resources\views\admin\observers" />
       <recent name="C:\laragon\www\covid19\resources\views" />
       <recent name="C:\laragon\www\covid19\resources\views\admin" />
       <recent name="C:\laragon\www\covid19\app\Http\Controllers\Admin" />
@@ -201,7 +176,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592870836585</updated>
-      <workItem from="1592870841790" duration="5846000" />
+      <workItem from="1592870841790" duration="7658000" />
     </task>
     <servers />
   </component>
@@ -224,9 +199,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592875086887" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592876206754">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592878281379">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592876206754" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592878281379" />
   </component>
 </project>
