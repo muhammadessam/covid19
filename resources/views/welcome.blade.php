@@ -8,13 +8,13 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <!-- Styles -->
     <style>
         html, body {
             background-color: #fff;
             color: #636b6f;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Rajdhani', sans-serif;
             font-weight: 200;
             height: 100vh;
             margin: 0;
@@ -64,9 +64,9 @@
 
         .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            width: 80%;
+            width: 70%;
         }
 
         .circle {
@@ -78,6 +78,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            margin: 5px;
         }
 
         h6 {
