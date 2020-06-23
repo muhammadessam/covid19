@@ -98,6 +98,7 @@ class PatientController extends Controller
         toast('successful', 'success');
         return redirect()->route('admin.patient.index');
     }
+    
 
     /**
      * Remove the specified resource from storage.

@@ -26,12 +26,12 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Phone</th>
-                            <th>Status</th>
-                            <th>Test date</th>
-                            <th>Isolation date</th>
+                            <th>Test </th>
+                            <th>Isolation </th>
                             <th>Band</th>
-                            <th>Observer</th>
+                            <th>Status</th>
                             <th>Village</th>
+                            <th>Observer</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
@@ -41,12 +41,13 @@
                                 <td>{{$item['identification']}}</td>
                                 <td>{{$item['name']}}</td>
                                 <td>{{$item['phone']}}</td>
-                                <td>{{$item['status']}}</td>
                                 <td>{{$item['test_date']}}</td>
                                 <td>{{$item['isolation_end']}}</td>
                                 <td>{{$item['band']}}</td>
-                                <td>{{$item->observer['name']}}</td>
+                                <td>{{$item['status']}}</td>
                                 <td>{{$item->village['name']}}</td>
+                                <td>{{$item->observer['name']}}</td>
+
                                 <td class="d-flex">
                                     <a class="btn btn-primary mr-2" href="{{route('admin.patient.edit', $item)}}"><i class="fa fa-edit"></i></a>
                                     <form action="{{route('admin.patient.destroy', $item)}}" method="post" onsubmit="return confirm('Are you sure ?')">

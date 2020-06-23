@@ -46,7 +46,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="phone">Phone</label>
-                                    <input class="form-control" type="tel" name="phone" id="phone" value="{{old('phone')}}">
+                                    <input class="form-control" type="text" name="phone" id="phone" value="{{old('phone')}}">
                                     <x-error name="phone"></x-error>
                                 </div>
                             </div>
@@ -57,8 +57,8 @@
                                 <div class="form-group">
                                     <label for="status">Status</label>
                                     <select class="form-control" name="status">
-                                        <option {{old('status') == 'active' ? 'selected': ''}} value="active">Active</option>
-                                        <option {{old('status') == 'cured' ? 'selected': ''}} value="cured">Cured</option>
+                                        <option {{old('status') == 'active' ? 'selected': ''}} value="Active">Active</option>
+                                        <option {{old('status') == 'cured' ? 'selected': ''}} value="Cured">Cured</option>
                                     </select>
                                 </div>
                             </div>
@@ -89,8 +89,8 @@
                                 <div class="form-group">
                                     <label for="status">Band</label>
                                     <select class="form-control" name="band">
-                                        <option {{old('band') == 'active' ? 'selected': ''}} value="1">yes</option>
-                                        <option {{old('band') == 'cured' ? 'selected': ''}} value="0">no</option>
+                                        <option {{old('band') == 'active' ? 'selected': ''}} value="Yes">Yes</option>
+                                        <option {{old('band') == 'cured' ? 'selected': ''}} value="No">No</option>
                                     </select>
                                     <x-error name="band"></x-error>
                                 </div>
