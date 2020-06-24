@@ -93,8 +93,8 @@
                                 <div class="form-group">
                                     <label for="status">Band</label>
                                     <select class="form-control" name="band">
-                                        <option {{$patient['band'] == 'active' ? 'selected': ''}} value="Yes">Yes</option>
-                                        <option {{$patient['band'] == 'cured' ? 'selected': ''}} value="No">No</option>
+                                        <option {{$patient['band']  ? 'selected': ''}} value="1">Yes</option>
+                                        <option {{!$patient['band']  ? 'selected': ''}} value="0">No</option>
                                     </select>
                                     <x-error name="band"></x-error>
                                 </div>
