@@ -11,8 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af2c5f6-fff3-49bc-a46c-9c18261cca58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ReportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/reports/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/datatable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/datatable.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,20 +146,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/patients" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/components" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\covid19\app\Http\Controllers\Admin" />
-      <recent name="C:\laragon\www\covid19\app\Http\Controllers\Admin\Auth" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\covid19\resources\views\components" />
       <recent name="C:\laragon\www\covid19\resources\views\admin\patients" />
       <recent name="C:\laragon\www\covid19\resources\views\admin\observers" />
       <recent name="C:\laragon\www\covid19\resources\views" />
       <recent name="C:\laragon\www\covid19\resources\views\admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\covid19\app\Http\Controllers\Admin" />
+      <recent name="C:\laragon\www\covid19\app\Http\Controllers\Admin\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -175,7 +181,8 @@
       <workItem from="1592870841790" duration="10606000" />
       <workItem from="1592910084508" duration="603000" />
       <workItem from="1592950946689" duration="43000" />
-      <workItem from="1592952185186" duration="3634000" />
+      <workItem from="1592952185186" duration="3703000" />
+      <workItem from="1592989458948" duration="7185000" />
     </task>
     <servers />
   </component>
@@ -195,13 +202,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1592878794711">
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1592993407464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592878794711" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592955060033">
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592993407464" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592993312770">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592955060033" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592993312770" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592994581750">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1280.994@0.0.1920.1050" timestamp="1592994581750" />
   </component>
 </project>

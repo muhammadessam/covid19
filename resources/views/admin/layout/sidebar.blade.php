@@ -35,12 +35,21 @@
                     </p>
                 </a>
             </li>
-            
-              <li class="nav-item ">
+
+            <li class="nav-item ">
                 <a href="{{route('admin.village.index')}}" class="nav-link {{request()->routeIs('admin.village.*') ? 'active' :''}}">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         villages
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a href="{{route('admin.report.index')}}" class="nav-link {{request()->routeIs('admin.report.*') ? 'active' :''}}">
+                    <i class="nav-icon fas fa-file"></i>
+                    <p>
+                        Reports
                     </p>
                 </a>
             </li>

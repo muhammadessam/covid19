@@ -26,5 +26,7 @@ Route::middleware('auth:admin')->group(function () {
     Route::resource('observer', 'ObserverController');
     Route::resource('patient', 'PatientController');
 
+    Route::get('report', 'ReportController@index')->name('report.index');
+
 
 });
