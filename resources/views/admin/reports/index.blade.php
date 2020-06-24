@@ -121,7 +121,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        @if($item['status']=='active')
+                                        @if($item['status']=='Active')
                                             <div class="badge badge-danger">Active</div>
                                         @else
                                             <div class="badge badge-success">Cured</div>
