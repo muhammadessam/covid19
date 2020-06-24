@@ -31,6 +31,6 @@ class Patient extends Model
 
     public static function Bands()
     {
-        return Patient::where('band', true);
+        return Patient::where('band', 'Yes');
     }
 }

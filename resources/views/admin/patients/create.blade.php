@@ -89,8 +89,8 @@
                                 <div class="form-group">
                                     <label for="status">Band</label>
                                     <select class="form-control" name="band">
-                                        <option {{old('band') ? 'selected': ''}} value="1">Yes</option>
-                                        <option {{old('band') ? 'selected': ''}} value="0">No</option>
+                                        <option {{old('band') =='Yes'? 'selected': ''}} value="Yes">Yes</option>
+                                        <option {{old('band') =='No'? 'selected': ''}} value="No">No</option>
                                     </select>
                                     <x-error name="band"></x-error>
                                 </div>
