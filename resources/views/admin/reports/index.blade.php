@@ -31,8 +31,8 @@
                                     <label for="status" class="mr-1">Status: </label>
                                     <select class="form-control" name="status" id="status">
                                         <option value="">All</option>
-                                        <option value="active">Active</option>
-                                        <option value="cured">Cured</option>
+                                        <option {{request('status') == 'active' ? 'selected' : ''}} value="active">Active</option>
+                                        <option {{request('status') == 'cured' ? 'selected' : ''}} value="cured">Cured</option>
                                     </select>
                                 </div>
                             </div>
@@ -44,8 +44,8 @@
                                     <label for="banded" class="mr-1">Baned: </label>
                                     <select class="form-control" name="banded" id="banded">
                                         <option value="">All</option>
-                                        <option value="1">Banded</option>
-                                        <option value="0">Not</option>
+                                        <option {{request('banded') == 'banded' ? 'selected' : ''}} value="banded">Banded</option>
+                                        <option {{request('banded') == 'notBanded' ? 'selected' : ''}} value="notBanded">Not Banded</option>
                                     </select>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                     <select class="form-control" name="observer_id" id="observer_id">
                                         <option value="">All</option>
                                         @foreach(\App\Observer::all() as $item)
-                                            <option value="{{$item['id']}}">{{$item['name']}}</option>
+                                            <option {{request('observer_id')==$item['id'] ? 'selected' : '' }} value="{{$item['id']}}">{{$item['name']}}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -70,7 +70,7 @@
                                     <select class="form-control" name="village_id" id="village_id">
                                         <option value="">All</option>
                                         @foreach(\App\Village::all() as $item)
-                                            <option value="{{$item['id']}}">{{$item['name']}}</option>
+                                            <option {{request('village_id')==$item['id'] ? 'selected' : '' }} value="{{$item['id']}}">{{$item['name']}}</option>
                                         @endforeach                                    </select>
                                 </div>
                             </div>

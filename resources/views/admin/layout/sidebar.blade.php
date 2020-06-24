@@ -18,7 +18,7 @@
                  
                    <li class="nav-item ">
                 <a href="{{route('admin.patient.index')}}" class="nav-link {{request()->routeIs('admin.patient.*') ? 'active' :''}}">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <i class="nav-icon fas fa-user"></i>
                     <p>
                         Patients
                     </p>
@@ -29,7 +29,7 @@
           
             <li class="nav-item ">
                 <a href="{{route('admin.observer.index')}}" class="nav-link {{request()->routeIs('admin.observer.*') ? 'active' :''}}">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <i class="nav-icon fas fa-eye"></i>
                     <p>
                         Observers
                     </p>
@@ -38,7 +38,7 @@
 
             <li class="nav-item ">
                 <a href="{{route('admin.village.index')}}" class="nav-link {{request()->routeIs('admin.village.*') ? 'active' :''}}">
-                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <i class="nav-icon fas fa-home"></i>
                     <p>
                         villages
                     </p>

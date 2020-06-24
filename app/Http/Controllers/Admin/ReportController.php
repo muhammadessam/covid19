@@ -21,11 +21,11 @@ class ReportController extends Controller
         if ($request['status'])
             $data = $data->where('status', $request['status']);
         if ($request['banded'])
-            $data = $data->where('band', $request['banded']);
+            $data = $data->where('band', $request['banded'] == 'banded');
         if ($request['observer_id'])
             $data = $data->where('observer_id', $request['observer_id']);
         if ($request['village_id'])
-            $data = $data->where('village_id ', $request['village_id']);
+            $data = $data->where('village_id', $request['village_id']);
 
         return view('admin.reports.index', compact('data'));
     }
