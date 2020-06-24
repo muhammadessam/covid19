@@ -44,7 +44,7 @@
                                 <td>{{$item['test_date']}}</td>
                                 <td>{{$item['isolation_end']}}</td>
                                 <td>
-                                    @if($item['band'])
+                                    @if($item['band'] == 'Yes')
                                         <div class="badge badge-success">Yes</div>
                                     @else
                                         <div class="badge badge-danger">No</div>
