@@ -26,8 +26,8 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Phone</th>
-                            <th>Test </th>
-                            <th>Isolation </th>
+                            <th>Test</th>
+                            <th>Isolation</th>
                             <th>Band</th>
                             <th>Status</th>
                             <th>Village</th>
@@ -43,8 +43,20 @@
                                 <td>{{$item['phone']}}</td>
                                 <td>{{$item['test_date']}}</td>
                                 <td>{{$item['isolation_end']}}</td>
-                                <td>{{$item['band']}}</td>
-                                <td>{{$item['status']}}</td>
+                                <td>
+                                    @if($item['band'])
+                                        <div class="badge badge-success">Yes</div>
+                                    @else
+                                        <div class="badge badge-danger">Yes</div>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($item['status']=='active')
+                                        <div class="badge badge-danger">Active</div>
+                                    @else
+                                        <div class="badge badge-success">Cured</div>
+                                    @endif
+                                </td>
                                 <td>{{$item->village['name']}}</td>
                                 <td>{{$item->observer['name']}}</td>
 
