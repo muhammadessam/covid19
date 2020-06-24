@@ -20,11 +20,11 @@
                     <a href="{{route('admin.patient.index')}}" class="btn btn-primary"><i class="fa fa-list"></i></a>
                 </div>
                 <div class="card-body">
-               <!--      <form action="{{route('admin.patient.store')}}" method="post"> -->
-                    <form  action="{{route('admin.patient.update',$patient)}}" method="post">
+                <!--      <form action="{{route('admin.patient.store')}}" method="post"> -->
+                    <form action="{{route('admin.patient.update',$patient)}}" method="post">
 
                         @csrf
-                          @method('PATCH')
+                        @method('PATCH')
 
                         <div class="row">
                             <div class="col-12">
@@ -61,8 +61,8 @@
                                 <div class="form-group">
                                     <label for="status">Status</label>
                                     <select class="form-control" name="status">
-                                        <option {{$patient['status'] == 'active' ? 'selected': ''}} value="Active">Active</option>
-                                        <option {{$patient['status'] == 'cured' ? 'selected': ''}} value="Cured">Cured</option>
+                                        <option {{$patient['status'] == 'Active' ? 'selected': ''}} value="Active">Active</option>
+                                        <option {{$patient['status'] == 'Cured' ? 'selected': ''}} value="Cured">Cured</option>
                                     </select>
                                 </div>
                             </div>

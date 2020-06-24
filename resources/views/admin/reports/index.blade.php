@@ -31,8 +31,8 @@
                                     <label for="status" class="mr-1">Status: </label>
                                     <select class="form-control" name="status" id="status">
                                         <option value="">All</option>
-                                        <option {{request('status') == 'active' ? 'selected' : ''}} value="active">Active</option>
-                                        <option {{request('status') == 'cured' ? 'selected' : ''}} value="cured">Cured</option>
+                                        <option {{request('status') == 'Active' ? 'selected' : ''}} value="Active">Active</option>
+                                        <option {{request('status') == 'Cured' ? 'selected' : ''}} value="Cured">Cured</option>
                                     </select>
                                 </div>
                             </div>
