@@ -2,6 +2,7 @@
 
 <script>
     $('#{{$id}}').DataTable({
+        "order": [[ 0, "desc" ]]
         @if(isset($printHead))
         dom: 'Bfrtip',
         lengthMenu: [[10, 25, 50, 100 - 1], [10, 25, 50, 100, "All"]],

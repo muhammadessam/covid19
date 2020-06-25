@@ -5,7 +5,7 @@
 
 <body>
 <div class="container container-fluid full-height">
-    <section class="content">
+    <section class="content" id="app">
 
         <div class="row m-5">
             <div class="col-12 text-center">
@@ -98,8 +98,43 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3 class="card-title">Last Updates</h3>
+                    </div>
+                    <div class="card-body">
+                        <table id="omani" class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Omani</th>
+                                <th>Arrival</th>
+                                <th>Total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            @foreach(\App\Patient::all()->sortByDesc('test_date')->groupBy('test_date') as $date=>$item)
+                                <tr>
+                                    <td>{{$date}}</td>
+                                    <td>{{$item->where('omani', 1)->count()}}</td>
+                                    <td>{{$item->where('omani', 0)->count()}}</td>
+                                    <td>{{$item->count()}}</td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
+    @include('admin.layout.footer')
+        <x-datatable id="omani"></x-datatable>
 </div>
 </body>
 </html>
