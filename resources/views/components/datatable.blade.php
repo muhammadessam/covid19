@@ -1,7 +1,6 @@
 @props(['id' => 'table', 'printHead'])
 
 <script>
-    let description = $('#readingdescription');
     $('#{{$id}}').DataTable({
         @if(isset($printHead))
         dom: 'Bfrtip',

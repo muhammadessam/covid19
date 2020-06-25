@@ -21,16 +21,25 @@ class Patient extends Model
 
     public static function Active()
     {
-        return Patient::where('status', 'active');
+        return Patient::where('status', true)->get();
     }
 
     public static function Cured()
     {
-        return Patient::where('status', 'cured');
+        return Patient::where('status', false)->get();
     }
 
     public static function Bands()
     {
-        return Patient::where('band', 'Yes');
+        return Patient::where('band', true)->get();
+    }
+
+    public static function Omani()
+    {
+        return Patient::where('omani', 1)->get();
+    }
+    public static function NoOmani()
+    {
+        return Patient::where('omani', 0)->get();
     }
 }
