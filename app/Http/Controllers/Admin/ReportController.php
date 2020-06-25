@@ -26,7 +26,8 @@ class ReportController extends Controller
             $data = $data->where('observer_id', $request['observer_id']);
         if ($request['village_id'])
             $data = $data->where('village_id', $request['village_id']);
-
+        if ($request['omani'])
+            $data = $data->where('omani', $request['omani']);
         return view('admin.reports.index', compact('data'));
     }
 }

@@ -61,8 +61,8 @@
                                 <div class="form-group">
                                     <label for="status">Status</label>
                                     <select class="form-control" name="status">
-                                        <option {{$patient['status'] == 'Active' ? 'selected': ''}} value="Active">Active</option>
-                                        <option {{$patient['status'] == 'Cured' ? 'selected': ''}} value="Cured">Cured</option>
+                                        <option {{$patient['status']  ? 'selected': ''}} value="1">Active</option>
+                                        <option {{!$patient['status']  ? 'selected': ''}} value="0">Cured</option>
                                     </select>
                                 </div>
                             </div>
@@ -93,10 +93,23 @@
                                 <div class="form-group">
                                     <label for="status">Band</label>
                                     <select class="form-control" name="band">
-                                        <option {{$patient['band'] =='Yes'? 'selected': ''}} value="Yes">Yes</option>
-                                        <option {{$patient['band'] =='No'? 'selected': ''}} value="No">No</option>
+                                        <option {{$patient['band'] ? 'selected': ''}} value="1">Yes</option>
+                                        <option {{!$patient['band'] ? 'selected': ''}} value="0">No</option>
                                     </select>
                                     <x-error name="band"></x-error>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="omani">Omani or Not</label>
+                                    <select class="form-control" name="omani">
+                                        <option {{$patient['omani']? 'selected': ''}} value="1">Omani</option>
+                                        <option {{!$patient['omani'] ? 'selected': ''}}  value="0">Not Omani</option>
+                                    </select>
+                                    <x-error name="omani"></x-error>
                                 </div>
                             </div>
                         </div>

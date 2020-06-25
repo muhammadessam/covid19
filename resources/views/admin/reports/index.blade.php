@@ -28,11 +28,24 @@
                         <div class="row m-1">
                             <div class="col-12">
                                 <div class="form-group">
+                                    <label for="omani" class="mr-1">Omani: </label>
+                                    <select class="form-control" name="omani" id="omani">
+                                        <option {{request('omani')===null ? 'selected' : ''}} value="">All</option>
+                                        <option {{request('omani')==='1' ? 'selected' : ''}} value="1">Omani</option>
+                                        <option {{request('omani')==='0'  ? 'selected' : ''}} value="0">Not Omani</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row m-1">
+                            <div class="col-12">
+                                <div class="form-group">
                                     <label for="status" class="mr-1">Status: </label>
                                     <select class="form-control" name="status" id="status">
-                                        <option value="">All</option>
-                                        <option {{request('status') == 'Active' ? 'selected' : ''}} value="Active">Active</option>
-                                        <option {{request('status') == 'Cured' ? 'selected' : ''}} value="Cured">Cured</option>
+                                        <option {{request('status')===null ? 'selected' : ''}} value="">All</option>
+                                        <option {{request('status')==='1' ? 'selected' : ''}} value="1">Active</option>
+                                        <option {{request('status')==='0'  ? 'selected' : ''}} value="0">Cured</option>
                                     </select>
                                 </div>
                             </div>
@@ -43,9 +56,9 @@
                                 <div class="form-group">
                                     <label for="banded" class="mr-1">Baned: </label>
                                     <select class="form-control" name="banded" id="banded">
-                                        <option value="">All</option>
-                                        <option {{request('banded') == 'banded' ? 'selected' : ''}} value="banded">Banded</option>
-                                        <option {{request('banded') == 'notBanded' ? 'selected' : ''}} value="notBanded">Not Banded</option>
+                                        <option {{request('banded')=== null ?'selected' : '' }} value="" selected>All</option>
+                                        <option {{request('banded')=== '1'  ? 'selected' : ''}} value="1">Banded</option>
+                                        <option {{request('banded')=== '0'  ? 'selected' : ''}} value="0">Not Banded</option>
                                     </select>
                                 </div>
                             </div>
@@ -100,6 +113,7 @@
                                 <th>Isolation</th>
                                 <th>Band</th>
                                 <th>Status</th>
+                                <th>Omani</th>
                                 <th>Village</th>
                                 <th>Observer</th>
                                 <th>Actions</th>
@@ -114,17 +128,24 @@
                                     <td>{{$item['test_date']}}</td>
                                     <td>{{$item['isolation_end']}}</td>
                                     <td>
-                                        @if($item['band'] == 'Yes')
+                                        @if($item['band'])
                                             <div class="badge badge-success">Yes</div>
                                         @else
                                             <div class="badge badge-danger">No</div>
                                         @endif
                                     </td>
                                     <td>
-                                        @if($item['status']=='Active')
+                                        @if($item['status'])
                                             <div class="badge badge-danger">Active</div>
                                         @else
                                             <div class="badge badge-success">Cured</div>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if($item['omani'])
+                                            <div class="badge badge-success">Omani</div>
+                                        @else
+                                            <div class="badge badge-danger">Not Omani</div>
                                         @endif
                                     </td>
                                     <td>{{$item->village['name']}}</td>

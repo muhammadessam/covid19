@@ -18,10 +18,10 @@ class CreatePatientsTable extends Migration
             $table->text('identification');
             $table->text('name');
             $table->text('phone');
-            $table->enum('status', ['active', 'cured']);
+            $table->boolean('status');
             $table->date('test_date');
             $table->date('isolation_end');
-            $table->enum('band', ['yes', 'no']);
+            $table->boolean('band');
             $table->unsignedBigInteger('village_id');
             $table->unsignedBigInteger('observer_id');
             $table->foreign('village_id')->references('id')->on('villages')->onDelete('cascade');

@@ -30,6 +30,7 @@
                             <th>Isolation</th>
                             <th>Band</th>
                             <th>Status</th>
+                            <th>Omani</th>
                             <th>Village</th>
                             <th>Observer</th>
                             <th>Actions</th>
@@ -44,17 +45,24 @@
                                 <td>{{$item['test_date']}}</td>
                                 <td>{{$item['isolation_end']}}</td>
                                 <td>
-                                    @if($item['band'] == 'Yes')
+                                    @if($item['band'])
                                         <div class="badge badge-success">Yes</div>
                                     @else
                                         <div class="badge badge-danger">No</div>
                                     @endif
                                 </td>
                                 <td>
-                                    @if($item['status']=="Active")
+                                    @if($item['status'])
                                         <div class="badge badge-danger">Active</div>
                                     @else
                                         <div class="badge badge-success">Cured</div>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($item['omani'])
+                                        <div class="badge badge-success">Omani</div>
+                                    @else
+                                        <div class="badge badge-danger">Not Omani</div>
                                     @endif
                                 </td>
                                 <td>{{$item->village['name']}}</td>
