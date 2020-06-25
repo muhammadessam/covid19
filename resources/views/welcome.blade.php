@@ -56,9 +56,6 @@
                     <a href="#" class="small-box-footer">وافد</a>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
             <div class="col-lg-4 col-6">
                 <div class="small-box bg-danger">
                     <div class="inner">
@@ -100,7 +97,6 @@
                 </div>
             </div>
         </div>
-
 
     </section>
 
