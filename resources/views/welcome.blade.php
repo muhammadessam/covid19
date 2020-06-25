@@ -24,7 +24,7 @@
                         <p>TOTAL</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-bag"></i>
+                        <i class="ion ion-person"></i>
                     </div>
                     <a href="#" class="small-box-footer">المجموع</a>
                 </div>
@@ -66,7 +66,7 @@
                         <p>ACTIVE</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-bag"></i>
+                        <i class="ion ion-sad"></i>
                     </div>
                     <a href="#" class="small-box-footer">نشط</a>
                 </div>
@@ -80,7 +80,7 @@
                         <p>CURED</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-bag"></i>
+                        <i class="ion ion-happy"></i>
                     </div>
                     <a href="#" class="small-box-footer">متعافى</a>
                 </div>
@@ -94,7 +94,7 @@
                         <p>BAND</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-bag"></i>
+                        <i class="ion ion-android-warning"></i>
                     </div>
                     <a href="#" class="small-box-footer">إسوارة</a>
                 </div>
