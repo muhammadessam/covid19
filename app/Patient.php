@@ -42,4 +42,12 @@ class Patient extends Model
     {
         return Patient::where('omani', 0)->get();
     }
+    public static function Live()
+    {
+        return Patient::where('live', 1)->get();
+    }
+    public static function Death()
+    {
+        return Patient::where('live', 0)->get();
+    }
 }

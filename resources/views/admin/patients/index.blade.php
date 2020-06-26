@@ -28,6 +28,7 @@
                             <th>Phone</th>
                             <th>Test</th>
                             <th>Isolation</th>
+                            <th>Live</th>
                             <th>Band</th>
                             <th>Status</th>
                             <th>Omani</th>
@@ -44,6 +45,13 @@
                                 <td>{{$item['phone']}}</td>
                                 <td>{{$item['test_date']}}</td>
                                 <td>{{$item['isolation_end']}}</td>
+                                <td>
+                                    @if($item['live'])
+                                        <div class="badge-success badge">Live</div>
+                                    @else
+                                        <div class="badge badge-danger">Death</div>
+                                    @endif
+                                </td>
                                 <td>
                                     @if($item['band'])
                                         <div class="badge badge-success">Yes</div>

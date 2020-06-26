@@ -46,6 +46,8 @@ class PatientController extends Controller
             'band' => 'required',
             'village_id' => 'required',
             'observer_id' => 'required',
+            'live' => 'required'
+
         ]);
         Patient::create($request->all());
         toast('successful', 'success');
@@ -93,6 +95,7 @@ class PatientController extends Controller
             'band' => 'required',
             'village_id' => 'required',
             'observer_id' => 'required',
+            'live' => 'required'
         ]);
         $patient->update($request->all());
         toast('successful', 'success');

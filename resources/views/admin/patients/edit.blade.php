@@ -117,6 +117,19 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
+                                    <label for="live">Live or Death</label>
+                                    <select class="form-control" name="live" id="live">
+                                        <option {{$patient['live']? 'selected': ''}} value="1">Live</option>
+                                        <option {{!$patient['live'] ? 'selected': ''}} value="0">Dead</option>
+                                    </select>
+                                    <x-error name="live"></x-error>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
                                     <label for="status">Village </label>
                                     <select class="form-control" name="village_id">
                                         @foreach(\App\Village::all() as $item)

@@ -18,16 +18,18 @@ class ReportController extends Controller
             $data = $data->where('test_date', '>=', date($request['from']));
         elseif ($request['to'])
             $data = $data->where('test_date', '<=', date($request['to']));
-        if ($request['status']!=null)
+        if ($request['status'] != null)
             $data = $data->where('status', $request['status']);
-        if ($request['banded']!=null)
+        if ($request['banded'] != null)
             $data = $data->where('band', $request['banded']);
         if ($request['observer_id'])
             $data = $data->where('observer_id', $request['observer_id']);
         if ($request['village_id'])
             $data = $data->where('village_id', $request['village_id']);
-        if ($request['omani']!=null)
+        if ($request['omani'] != null)
             $data = $data->where('omani', $request['omani']);
+        if ($request['live'] != null)
+            $data = $data->where('live', $request['live']);
         return view('admin.reports.index', compact('data'));
     }
 }
