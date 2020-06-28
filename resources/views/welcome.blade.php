@@ -6,20 +6,18 @@
 <body>
 <div class="container container-fluid full-height">
     <section class="content" id="app">
-<br>
-        <div class="row m-6">
+        <div class="row m-5">
             <div class="col-6 text-center">
-                <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" width="200px" height="150px">
-               
+                <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" class="w-50 img-thumbnail">
+
             </div>
-              <div class="col-6 text-center">
-                
+            <div class="col-6 text-center ">
+
                 <h1> Sinaw Hospital </h1>
                 <h3>فريق التقصي والمتابعة</h3>
                 <h3>Covid-19</h3>
             </div>
         </div>
-<br>
         <div class="row">
             <div class="col-lg-3 col-6">
                 <div class="small-box bg-info">
@@ -60,7 +58,7 @@
                     <a href="#" class="small-box-footer">غير عماني</a>
                 </div>
             </div>
-               <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6">
                 <div class="small-box bg-warning">
                     <div class="inner">
                         <h3>{{\App\Patient::bands()->count()}}</h3>
@@ -72,7 +70,7 @@
                     <a href="#" class="small-box-footer">إسوارة</a>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-6">
                 <div class="small-box bg-danger">
                     <div class="inner">
@@ -101,24 +99,22 @@
             </div>
 
 
-         
-            
-                 <div class="col-lg-4 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-gradient-dark">
-                        <div class="inner">
-                            <h3>{{\App\Patient::Death()->count()}}</h3>
+            <div class="col-lg-4 col-6">
+                <!-- small box -->
+                <div class="small-box bg-gradient-dark">
+                    <div class="inner">
+                        <h3>{{\App\Patient::Death()->count()}}</h3>
 
-                            <p>Dead</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-sad-outline"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">متوفى</a>
+                        <p>Dead</p>
                     </div>
+                    <div class="icon">
+                        <i class="ion ion-sad-outline"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">متوفى</a>
                 </div>
-                
-                
+            </div>
+
+
         </div>
 
         <div class="row">
@@ -157,7 +153,7 @@
     </section>
 
     @include('admin.layout.footer')
-        <x-datatable id="omani"></x-datatable>
+    <x-datatable id="omani"></x-datatable>
 </div>
 </body>
 </html>

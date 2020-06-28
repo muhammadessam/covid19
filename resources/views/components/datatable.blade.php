@@ -2,7 +2,7 @@
 
 <script>
     $('#{{$id}}').DataTable({
-        "order": [[ 0, "desc" ]]
+        "order": [[ 4, "desc" ]],
         @if(isset($printHead))
         dom: 'Bfrtip',
         lengthMenu: [[10, 25, 50, 100 - 1], [10, 25, 50, 100, "All"]],
@@ -17,10 +17,21 @@
                 customize: function (win) {
                     $(win.document.head).find('title').text('{{$printHead}}');
                     $(win.document.body).find('h1').text('{{$printHead}}').addClass('text-center mb-5');
-                    $(win.document.body).find('h1').after(description);
-                    win.onafterprint = function (e) {
-                        $('#descriptionDiv').append(description);
-                    };
+                    $(win.document.body).find('h1').append(`
+<div class="row m-5">
+            <div class="col-6 text-center">
+                <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" class="w-50 img-thumbnail">
+
+            </div>
+            <div class="col-6 text-center ">
+
+                <h1> Sinaw Hospital </h1>
+                <h3>فريق التقصي والمتابعة</h3>
+                <h3>Covid-19</h3>
+            </div>
+        </div>
+
+                    `)
                 }
             },
             'pageLength'
