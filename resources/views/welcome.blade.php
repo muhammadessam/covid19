@@ -7,21 +7,28 @@
 <div class="container container-fluid full-height">
     <section class="content" id="app">
 <br>
-        <div class="row m-6">
-            <div class="col-6 text-center">
-                <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" width="200px" height="150px">
-               
-            </div>
-              <div class="col-6 text-center">
-                
+        <div class="row m-12">
+           
+              <div class="col-4 text-center">
+
                 <h1> Sinaw Hospital </h1>
-                <h3>فريق التقصي والمتابعة</h3>
+                <h4>Investigation & follow-up team</h4>
+                <h5>By : Nasser Al Rashdi</h5>
+            </div>
+                <div class="col-4 text-center">
+                   <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" width="200px" height="150px">
                 <h3>Covid-19</h3>
             </div>
+                <div class="col-4 text-center">
+                <h1>مستشفى سناو</h1>
+                <h3>فريق التقصي والمتابعة</h3>
+                 <h5>فكرة : ناصر الراشدي</h5>
+            </div>
+            
         </div>
 <br>
         <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-12 col-6">
                 <div class="small-box bg-info">
                     <div class="inner">
                         <h3>{{\App\Patient::all()->count()}}</h3>
@@ -34,8 +41,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-6">
-                <div class="small-box bg-gradient-primary">
+            <div class="col-lg-6 col-6">
+                <div class="small-box bg-gradient-purple">
                     <div class="inner">
                         <h3>{{\App\Patient::Omani()->count()}}</h3>
                         <p>Omani</p>
@@ -47,8 +54,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-6">
-                <div class="small-box bg-gradient-secondary">
+            <div class="col-lg-6 col-6">
+                <div class="small-box bg-orange">
                     <div class="inner">
                         <h3>{{\App\Patient::NoOmani()->count()}}</h3>
 
@@ -60,20 +67,9 @@
                     <a href="#" class="small-box-footer">غير عماني</a>
                 </div>
             </div>
-               <div class="col-lg-3 col-6">
-                <div class="small-box bg-warning">
-                    <div class="inner">
-                        <h3>{{\App\Patient::bands()->count()}}</h3>
-                        <p>BAND</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-android-warning"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">إسوارة</a>
-                </div>
-            </div>
+          
             
-            <div class="col-lg-4 col-6">
+            <div class="col-lg-6 col-6">
                 <div class="small-box bg-danger">
                     <div class="inner">
                         <h3>{{\App\Patient::Active()->count()}}</h3>
@@ -86,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-6">
+            <div class="col-lg-6 col-6">
                 <div class="small-box bg-gradient-success">
                     <div class="inner">
                         <h3>{{\App\Patient::Cured()->count()}}</h3>
@@ -101,9 +97,20 @@
             </div>
 
 
-         
+              <div class="col-lg-6 col-6">
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                        <h3>{{\App\Patient::bands()->count()}}</h3>
+                        <p>BAND</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-android-warning"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">إسوارة</a>
+                </div>
+            </div>
             
-                 <div class="col-lg-4 col-6">
+                 <div class="col-lg-6 col-6">
                     <!-- small box -->
                     <div class="small-box bg-gradient-dark">
                         <div class="inner">
@@ -155,9 +162,15 @@
 
         </div>
     </section>
+@include('admin.layout.footer')
 
-    @include('admin.layout.footer')
         <x-datatable id="omani"></x-datatable>
 </div>
+
+    <footer class="main-footer no-print">
+        <strong>Copyright &copy; 2020 <a href="http://defaultpath.com/">DefaultPath</a>.</strong>
+
+        All rights reserved.                 By : Nasser Al Rashdi
+    </footer>
 </body>
 </html>
