@@ -1,0 +1,1 @@
+[29-Jun-2020 20:27:10 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Auth\User' not found in /home/vpscpanel/public_html/covid19/app/Admin.php on line 9

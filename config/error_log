@@ -1,0 +1,4 @@
+[29-Jun-2020 20:26:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/vpscpanel/public_html/covid19/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/vpscpanel/public_html/covid19/config/database.php on line 18
