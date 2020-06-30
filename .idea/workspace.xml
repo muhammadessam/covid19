@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8af2c5f6-fff3-49bc-a46c-9c18261cca58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/datatable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/datatable.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +193,8 @@
       <workItem from="1593332490959" duration="669000" />
       <workItem from="1593338024590" duration="567000" />
       <workItem from="1593348593333" duration="38000" />
-      <workItem from="1593515626333" duration="293000" />
+      <workItem from="1593515626333" duration="398000" />
+      <workItem from="1593516125445" duration="70000" />
     </task>
     <servers />
   </component>

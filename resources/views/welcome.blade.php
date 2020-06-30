@@ -7,11 +7,11 @@
 <div class="container container-fluid full-height">
     <section class="content" id="app">
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-12 text-center">
                 <div class="row m-12">
                     <div class="col-12 text-center ">
-                        <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" width="200px" height="150px">
+                        <img src="{{asset('admin/dist/img/moh.png')}}" alt="User Image" class="img-thumbnail">
                         <h1> Sinaw Hospital </h1>
                         <h4>Investigation & follow-up team</h4>
                         <h4>Covid-19</h4>
