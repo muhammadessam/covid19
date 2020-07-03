@@ -15,8 +15,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
-                 
-                   <li class="nav-item ">
+
+            <li class="nav-item ">
                 <a href="{{route('admin.patient.index')}}" class="nav-link {{request()->routeIs('admin.patient.*') ? 'active' :''}}">
                     <i class="nav-icon fas fa-user"></i>
                     <p>
@@ -24,9 +24,8 @@
                     </p>
                 </a>
             </li>
-            
-            
-          
+
+
             <li class="nav-item ">
                 <a href="{{route('admin.observer.index')}}" class="nav-link {{request()->routeIs('admin.observer.*') ? 'active' :''}}">
                     <i class="nav-icon fas fa-eye"></i>
@@ -53,7 +52,13 @@
                     </p>
                 </a>
             </li>
-          
+            <li class="nav-item align-self-center">
+                <form action="{{route('admin.logout')}}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-flat btn-outline-secondary">Logout</button>
+                </form>
+            </li>
+
         </ul>
     </nav>
     <!-- /.sidebar-menu -->

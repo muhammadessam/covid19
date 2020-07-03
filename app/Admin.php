@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Notifications\CustomerResetPasswordNotification;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -21,6 +22,10 @@ class Admin extends Authenticatable
     ];
 
 
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new CustomerResetPasswordNotification($token));
+    }
 
 
 }
