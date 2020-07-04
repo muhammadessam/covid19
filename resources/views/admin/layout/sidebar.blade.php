@@ -52,6 +52,14 @@
                     </p>
                 </a>
             </li>
+            <li class="nav-item ">
+                <a href="{{route('admin.settings.index')}}" class="nav-link {{request()->routeIs('admin.settings.*') ? 'active' :''}}">
+                    <i class="nav-icon fas fa-gears"></i>
+                    <p>
+                        Settings
+                    </p>
+                </a>
+            </li>
             <li class="nav-item align-self-center">
                 <form action="{{route('admin.logout')}}" method="post">
                     @csrf

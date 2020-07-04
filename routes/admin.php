@@ -25,7 +25,8 @@ Route::middleware('auth:admin')->group(function () {
     Route::resource('village', 'VillageController');
     Route::resource('observer', 'ObserverController');
     Route::resource('patient', 'PatientController');
-
+    Route::get('settings', 'SettingsController@index')->name('settings.index');
+    Route::post('settings', 'SettingsController@store')->name('settings.store');
     Route::get('report', 'ReportController@index')->name('report.index');
 
 
